@@ -1,5 +1,7 @@
 import Profile from "./Profile/Profile";
 import userData from "../userData.json";
+import "../index.css";
+import "modern-normalize";
 
 const App = () => {
   return (

@@ -1,0 +1,40 @@
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid #181717;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(241, 247, 245, 0.975);
+  padding: 20px 0;
+}
+.image {
+  margin-top: 10px;
+  border-radius: 50%;
+  background-color: black;
+}
+.name {
+  font-weight: bold;
+}
+.list {
+  background-color: rgb(177, 181, 183);
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 1px solid #181717; /* Верхня межа для списку */
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 33.33%;
+  padding: 10px 0;
+}
+.item:not(:last-child) {
+  border-right: 1px solid #181717; /* Вертикальна межа між елементами */
+}
