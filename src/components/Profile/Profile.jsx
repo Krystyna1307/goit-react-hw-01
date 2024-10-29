@@ -1,28 +1,25 @@
-const Profile = () => {
+const Profile = ({ name, tag, location, image, stats }) => {
   return (
     <div>
       <div>
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-          alt="User avatar"
-        />
-        <p>Petra Marica</p>
-        <p>@pmarica</p>
-        <p>Salvador, Brasil</p>
+        <img src={image} alt="User avatar" width="100" />
+        <p>{name}</p>
+        <p>@{tag}</p>
+        <p>{location}</p>
       </div>
 
       <ul>
         <li>
           <span>Followers</span>
-          <span>1000</span>
+          <span>{stats.followers}</span>
         </li>
         <li>
           <span>Views</span>
-          <span>2000</span>
+          <span>{stats.views}</span>
         </li>
         <li>
           <span>Likes</span>
-          <span>3000</span>
+          <span>{stats.likes}</span>
         </li>
       </ul>
     </div>
